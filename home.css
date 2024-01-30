@@ -10,7 +10,7 @@ main section {
   height: fit-content;
 }
 main section:first-of-type {
-  background-image: url(../STEM\ High\ School\ for\ Boys\ -\ 6th\ of\ October.jpg);
+  background-image: url("../STEM High School for Boys - 6th of October.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
