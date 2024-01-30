@@ -1,0 +1,108 @@
+:root {
+  --ti-cursor-color: antiquewhite;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+body .loader-container {
+  position: absolute !important;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000000000000;
+  transition: 0.5s ease-in-out;
+  background-color: #f1f1f1;
+}
+body .loader-container .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .loader-container .loader img {
+  width: 30%;
+}
+body .loader-container .loader h1 {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 535px;
+}
+body .loader-container .loader h1 .message {
+  color: #333;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 280px;
+  animation: openclose 5s ease-in-out infinite;
+}
+body .loader-container .loader h1 span {
+  font-size: 40px;
+  margin-left: 40px;
+}
+body nav {
+  display: flex;
+  z-index: 120;
+  position: fixed;
+  width: 100vw;
+  padding: 5px 10%;
+  justify-content: space-between;
+  height: 100px;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+body nav > div {
+  display: flex;
+  align-items: center;
+}
+body nav > div p {
+  margin: 5px;
+}
+body nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+}
+body nav > * {
+  z-index: inherit;
+}
+
+.overlayer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}/*# sourceMappingURL=main.css.map */

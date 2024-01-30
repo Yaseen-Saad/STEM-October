@@ -1,0 +1,28 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main section {
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main section:first-of-type {
+  background-image: url(../STEM\ High\ School\ for\ Boys\ -\ 6th\ of\ October.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  font-size: 2rem;
+  position: relative;
+}
+main section:first-of-type > :not(.overlayer) {
+  z-index: 3;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM October</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader">
+            <img src="./logo zengy.png" alt="">
+
+            <h1>
+                <span>It's a Place to</span>
+                <div class="message"></div>
+            </h1>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <div><img src="./STEM_logo_reversed.png">
+                <div>
+                    <p>STEM School for Boys</p>
+                    <p>6th of October</p>
+                </div>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Academics</li>
+                <li>Alumni</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+        <section>
+            <h1 id="Heading_STEM_OCTOBER"></h1>
+            <div class="overlayer"></div>
+        </section>
+    </main>
+
+
+
+
+    <!-- <script type="text/javascript" src="loading-bar.js"></script> -->
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+
+        const landingAnimation = new TypeIt("#Heading_STEM_OCTOBER", {
+            speed: 40,
+            waitUntilVisible: true,
+            afterComplete: function (instance) {
+                instance.destroy();
+            }
+        }).type("Wecomme to", { delay: 100 })
+            .move(-8, { delay: 150 })
+            .type("l", { delay: 100 })
+            .move(3, { delay: 250 })
+            .delete(1, { delay: 200 })
+            .move(5, { delay: 100 })
+            .type(" <span style='color:red'>stem</span>", { delay: 200 })
+            .delete(4, { delay: 200 })
+            .type("STEM")
+            .type(" October.");
+
+        const animationInLoader = new TypeIt("h1> div.message", {
+            speed: 100,
+            afterComplete: function (instance) {
+                instance.destroy();
+            }
+        }).type("Think").pause(1000)
+            .delete()
+            .type("Innovate").pause(1000)
+            .delete().type("Create").go();
+        setTimeout(() => {
+            document.querySelector(".loader-container").style.top = '-100%'
+            landingAnimation.go()
+        }, 5700);
+    </script>
+
+</body>
+
+</html>
