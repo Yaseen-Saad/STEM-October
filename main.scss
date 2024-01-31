@@ -16,6 +16,11 @@ body {
     width: 100vw;
     background-color: #f1f1f1;
 
+    container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
     .loader-container {
         position: absolute !important;
         top: 0;
@@ -71,39 +76,44 @@ body {
     }
 
     nav {
-        display: flex;
         z-index: 120;
         position: fixed;
         width: 100vw;
-        padding: 5px 10%;
-        justify-content: space-between;
-        height: 100px;
         top: 0;
         left: 0;
-        color: #fff;
-        font-family: 'Oswald', sans-serif;
-        >div {
-            display: flex;
-            align-items: center;
-            p{
-                margin: 5px;
-            }
-        }
+        padding: 5px 10%;
 
-        ul {
-            list-style-type: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
+        container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            width: 60%;
-        }
+            height: 100px;
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
 
-        >* {
-            z-index: inherit;
+            >div {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin: 5px;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+                width: 60%;
+            }
+
+            >* {
+                z-index: inherit;
+            }
         }
     }
 }

@@ -4,17 +4,19 @@ main {
   justify-content: center;
   flex-direction: column;
 }
-main section {
+main > section {
   width: 100vw;
   height: -moz-fit-content;
   height: fit-content;
 }
-main section:first-of-type {
+main > section:first-of-type {
   background-image: url("../STEM High School for Boys - 6th of October.jpg");
-  text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+main > section:first-of-type container {
+  text-align: center;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -26,12 +28,12 @@ main section:first-of-type {
   font-family: "Oswald", sans-serif;
   font-family: "Poor Story", system-ui;
 }
-main section:first-of-type h1 {
+main > section:first-of-type container h1 {
   font-weight: normal;
 }
-main section:first-of-type h1 #STEMOctoberWord {
+main > section:first-of-type container h1 #STEMOctoberWord {
   font-weight: 900 !important;
 }
-main section:first-of-type > :not(.overlayer) {
+main > section:first-of-type > :not(.overlayer) {
   z-index: 3;
 }/*# sourceMappingURL=home.css.map */
