@@ -23,9 +23,8 @@
         <div class="loader">
             <img src="./logo zengy.png" alt="">
 
-            <h1>
-                <span>It's a Place to</span>
-                <div class="message"></div>
+            <h1 id="loaderText">
+                <span>A Place to </span>
             </h1>
         </div>
     </div>
@@ -40,12 +39,12 @@
                     </div>
                 </div>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Academics</li>
-                    <li>Alumni</li>
-                    <li>Contact</li>
-                    <li>Login</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Academics</a></li>
+                    <li><a href="">Alumni</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Login</a></li>
                 </ul>
             </container>
         </nav>
@@ -82,15 +81,15 @@
             .type("<span id='STEMOctoberWord'>STEM</span>")
             .type(" October.");
 
-        const animationInLoader = new TypeIt("h1> div.message", {
+        const animationInLoader = new TypeIt("h1#loaderText", {
             speed: 100,
             afterComplete: function (instance) {
                 instance.destroy();
             }
         }).type("Think").pause(1000)
-            .delete()
+            .delete(5)
             .type("Innovate").pause(1000)
-            .delete().type("Create").go();
+            .delete(8).type("Excel").go();
         setTimeout(() => {
             const loader = document.querySelector(".loader-container");
             loader.style.top = '-100%'
@@ -98,7 +97,7 @@
                 loader.remove()
             }, 1000);
             landingAnimation.go()
-        }, 5700);
+        }, 6400);
     </script>
 
 </body>

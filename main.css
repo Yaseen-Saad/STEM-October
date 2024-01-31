@@ -1,5 +1,5 @@
 :root {
-  --ti-cursor-color: antiquewhite;
+  --Main_Color: #fff;
 }
 
 * {
@@ -30,7 +30,7 @@ body .loader-container {
   align-items: center;
   z-index: 100000000000000;
   transition: 0.5s ease-in-out;
-  background-color: #f1f1f1;
+  background-color: var(--Main_Color);
 }
 body .loader-container .loader {
   display: flex;
@@ -42,26 +42,14 @@ body .loader-container .loader img {
   width: 30%;
 }
 body .loader-container .loader h1 {
+  font-family: "Oswald", sans-serif;
+  font-family: "Poor Story", system-ui;
   color: #333;
-  font-family: tahoma;
   font-size: 3rem;
   font-weight: 100;
   line-height: 1.5;
-  white-space: nowrap;
   overflow: hidden;
-  position: relative;
-  width: 535px;
-}
-body .loader-container .loader h1 .message {
-  color: #333;
-  display: block;
-  font-weight: 900;
-  overflow: hidden;
-  position: absolute;
-  padding-left: 0.5rem;
-  top: 0.2rem;
-  left: 280px;
-  animation: openclose 5s ease-in-out infinite;
+  --ti-cursor-color: var(--Main_Color);
 }
 body .loader-container .loader h1 span {
   font-size: 40px;
@@ -79,8 +67,8 @@ body nav container {
   display: flex;
   justify-content: space-between;
   height: 100px;
-  color: #fff;
   font-family: "Oswald", sans-serif;
+  color: var(--Main_Color);
 }
 body nav container > div {
   display: flex;
@@ -99,6 +87,10 @@ body nav container ul {
   align-items: center;
   height: 100%;
   width: 60%;
+}
+body nav container ul a {
+  color: inherit;
+  text-decoration: none;
 }
 body nav container > * {
   z-index: inherit;
