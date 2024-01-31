@@ -1,49 +1,48 @@
+@font-face {
+    font-family: Comic;
+    src: url(./comici.ttf);
+}
+
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-
     >section {
-        width: 100vw;
-        height: fit-content;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        overflow: hidden;
 
-      
+        container {
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--Main_Color);
+            font-size: 2rem;
+            position: relative;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poor Story', system-ui;
+            font-family: Comic;
 
+            h1 {
+                font-weight: normal;
 
-        &:first-of-type {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-
-            container {
-                text-align: center;
-                width: 100vw;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: var(--Main_Color);
-                font-size: 2rem;
-                position: relative;
-                font-family: 'Oswald', sans-serif;
-                font-family: 'Poor Story', system-ui;
-
-                h1 {
-
-                    font-weight: normal;
-
-                    #STEMOctoberWord {
-                        font-weight: 900 !important;
-                    }
+                #STEMOctoberWord {
+                    font-weight: 900 !important;
+                    background-color: #6c00f7;
+                    padding: 3px 5px;
                 }
             }
+        }
 
-            >:not(.overlayer) {
-                z-index: 3;
-            }
-
+        >:not(.overlayer) {
+            z-index: 3;
         }
     }
+}
+
+.achivements {
+    max-width: 100vw;
 }
