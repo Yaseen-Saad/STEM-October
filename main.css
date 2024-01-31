@@ -74,6 +74,7 @@ body nav {
   top: 0;
   left: 0;
   color: #fff;
+  font-family: "Oswald", sans-serif;
 }
 body nav > div {
   display: flex;

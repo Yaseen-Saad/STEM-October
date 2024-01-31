@@ -11,6 +11,7 @@ main section {
 }
 main section:first-of-type {
   background-image: url("../STEM High School for Boys - 6th of October.jpg");
+  text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -22,6 +23,14 @@ main section:first-of-type {
   color: antiquewhite;
   font-size: 2rem;
   position: relative;
+  font-family: "Oswald", sans-serif;
+  font-family: "Poor Story", system-ui;
+}
+main section:first-of-type h1 {
+  font-weight: normal;
+}
+main section:first-of-type h1 #STEMOctoberWord {
+  font-weight: 900 !important;
 }
 main section:first-of-type > :not(.overlayer) {
   z-index: 3;
